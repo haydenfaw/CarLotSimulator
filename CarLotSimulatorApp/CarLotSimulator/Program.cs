@@ -54,13 +54,9 @@ namespace CarLotSimulator
             ford.MakeEngineNoise();
             ford.MakeHonkNoise();
 
-            //old
-            /*var cars = new List<Car>() { jeep, tahoe, ford };
+            //Prints the number of cars that are in the car lot
+            Console.WriteLine($"There are {CarLot.NumberOfCars} cars in the car lot:");
 
-            foreach(var car in cars)
-            {
-                Console.WriteLine($"{car.Make} {car.Model} {car.Year} {car.EngineNoise} {car.HonkNoise} {car.IsDriveable} ");
-            }*/
             foreach (var car in carLot.ListOfCars)
             {
                 Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model} ");
